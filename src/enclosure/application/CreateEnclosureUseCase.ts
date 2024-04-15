@@ -9,7 +9,8 @@ export class CreateEnclosureUseCase {
     humidity: string,
     food: string,
     water: string,
-    enclosureId: number
+    enclosureId: number,
+    date:string
   ): Promise<Enclosure | null> {
     try {
       const enclosure = await this.enclosureRepository.createEnclosure(
@@ -17,7 +18,8 @@ export class CreateEnclosureUseCase {
         humidity,
         food,
         water,
-        enclosureId
+        enclosureId,
+        date
       );
 
       return enclosure;

@@ -16,6 +16,7 @@ model Datos {
   water       String
   enclosure   Enclosure @relation(fields: [enclosureId], references: [id])
   enclosureId Int
+  date String
 }
 
 model Enclosure {

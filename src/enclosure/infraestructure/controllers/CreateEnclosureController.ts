@@ -13,7 +13,8 @@ export class CreateEnclosureController {
         data.humidity,
         data.food,
         data.water,
-        data.enclosureId
+        data.enclosureId,
+        data.date
       );
 
       if (enclosure)
@@ -27,6 +28,7 @@ export class CreateEnclosureController {
             food: enclosure?.food,
             water: enclosure?.water,
             enclosureId: enclosure?.enclosureId,
+            date: enclosure?.date,
           },
         });
       else

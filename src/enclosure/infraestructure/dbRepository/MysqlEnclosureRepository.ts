@@ -15,7 +15,8 @@ export class MysqlEnclosureRepository implements EnclosureRepository {
     humidity: string,
     food: string,
     water: string,
-    enclosureId: number
+    enclosureId: number,
+    date:string
   ): Promise<Enclosure | null> {
     try {
       const createdEnclosure = await this.prisma.datos.create({
@@ -25,6 +26,7 @@ export class MysqlEnclosureRepository implements EnclosureRepository {
           food,
           water,
           enclosureId,
+          date
         },
       });
       return createdEnclosure;

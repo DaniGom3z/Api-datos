@@ -6,6 +6,7 @@ export interface EnclosureRepository {
     humidity: string,
     food: string,
     water: string,
-    enclosureId: number
+    enclosureId: number,
+    date: string,
   ): Promise<Enclosure | null>;
 }

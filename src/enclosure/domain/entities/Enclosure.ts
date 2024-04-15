@@ -5,6 +5,7 @@ export class Enclosure {
     readonly humidity: string,
     readonly food: string,
     readonly water: string,
-    readonly enclosureId: number
+    readonly enclosureId: number,
+    readonly date: String
   ) {}
 }
