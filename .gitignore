@@ -1,6 +1,1 @@
 node_modules/
-dist/
-.tmp
-.idea
-.env
-coverage/
