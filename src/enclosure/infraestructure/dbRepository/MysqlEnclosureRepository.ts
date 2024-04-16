@@ -16,6 +16,7 @@ export class MysqlEnclosureRepository implements EnclosureRepository {
     food: string,
     water: string,
     enclosureId: number,
+    datoId: number,
     date:string
   ): Promise<Enclosure | null> {
     try {
@@ -26,6 +27,7 @@ export class MysqlEnclosureRepository implements EnclosureRepository {
           food,
           water,
           enclosureId,
+          datoId,
           date
         },
       });

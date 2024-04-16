@@ -1,3 +1,4 @@
+
 export class Enclosure {
   constructor(
     readonly id: number,
@@ -6,6 +7,7 @@ export class Enclosure {
     readonly food: string,
     readonly water: string,
     readonly enclosureId: number,
+    readonly datoId: number,
     readonly date: String
   ) {}
 }

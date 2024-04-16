@@ -10,6 +10,7 @@ export class CreateEnclosureUseCase {
     food: string,
     water: string,
     enclosureId: number,
+    datoId: number,
     date:string
   ): Promise<Enclosure | null> {
     try {
@@ -19,6 +20,7 @@ export class CreateEnclosureUseCase {
         food,
         water,
         enclosureId,
+        datoId,
         date
       );
 

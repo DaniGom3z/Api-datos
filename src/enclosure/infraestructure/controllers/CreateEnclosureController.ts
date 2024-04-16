@@ -14,6 +14,7 @@ export class CreateEnclosureController {
         data.food,
         data.water,
         data.enclosureId,
+        data.datoId,
         data.date
       );
 
@@ -28,6 +29,7 @@ export class CreateEnclosureController {
             food: enclosure?.food,
             water: enclosure?.water,
             enclosureId: enclosure?.enclosureId,
+            datoId: enclosure?.datoId,
             date: enclosure?.date,
           },
         });
